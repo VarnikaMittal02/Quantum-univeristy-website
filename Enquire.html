@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!---------------- header ------------------------>
+
+    <section class="sub-header-enquire">
+        <nav>
+            <a href="index.html"><img src="image/qulogo.png" alt=""></a>
+            <div class="nav-list" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html"> HOME</a></li>
+                    <li> <a href="about.html">ABOUT</a></li>
+                    <li> <a href="course.html">COURSES</a></li>
+                    <li> <a href="blog.html"> BLOG</a></li>
+                    <li> <a href="club.html"> CLUBS</a></li>
+
+                    <li> <a href="contact.html"> CONTACT</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+
+        <h1>Enquire in Clubs</h1>
+
+    </section>
+
+
+
+
+
+    <div class="outer">
+       
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+            
+            label {
+              padding: 12px 12px 12px 0;
+              display: inline-block;
+            }
+            
+            input[type=submit] {
+              background-color: red;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: #e9dede;
+              padding: 20px;
+            }
+            
+            .col-25 {
+              float: left;
+              width: 25%;
+              margin-top: 6px;
+            }
+            
+            .col-75 {
+              float: left;
+              width: 75%;
+              margin-top: 6px;
+            }
+            
+            /* Clear floats after the columns */
+            .row::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+              }
+            }
+            </style>
+            </head>
+            <body>
+            
+           
+            <div class="container">
+              <form action="">
+
+              <div class="row">
+
+                <div class="col-25">
+
+                  <label for="fname">First Name</label>
+
+                </div>
+
+                <div class="col-75">
+
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                </div>
+
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="Roll number">Roll number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your roll number">
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="course">Course</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="btech">Btech</option>
+                    <option value="Bca">Bca</option>
+                    <option value="Bcom">Bcom</option>
+                    <option value="Mca">Mca</option>
+                    <option value="Mba">Mba</option>
+                    <option value="hotel Management">hotel Management</option>
+                    <option value="bsc">bsc</option>
+                    <option value="phd">phd</option>
+
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">Select Club</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="Dance Club">Dance Club</option>
+                    <option value="Pahal Club">Pahal Club</option>
+                    <option value="Codex Club">Codex Club</option>
+                    <option value="Creative Art Club">Creative Art Club</option>
+                    <option value="Music Club">Music Club</option>
+                    <option value="Sports Club">Sports Club</option>
+
+                  </select>
+                </div>
+              </div>
+
+
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">About your hobbies</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+              </form>
+            </div>
+            
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
